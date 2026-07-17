@@ -1,0 +1,40 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="KD4Kzgo54r1HR1CTNJ3y">
+    <mxGraphModel dx="-116" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="x8uWslUSxjqMiFZsflKR-18" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Users&amp;nbsp;" vertex="1">
+          <mxGeometry height="140" width="160" x="860" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="x8uWslUSxjqMiFZsflKR-19" parent="x8uWslUSxjqMiFZsflKR-18" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="user_id&amp;nbsp; (PK)&lt;div&gt;full_name&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;&lt;code data-start=&quot;1221&quot; data-end=&quot;1227&quot;&gt;role&lt;/code&gt;&lt;/div&gt;&lt;div&gt;phone_number&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="x8uWslUSxjqMiFZsflKR-20" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Matches" vertex="1">
+          <mxGeometry height="140" width="160" x="1370" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="x8uWslUSxjqMiFZsflKR-21" parent="x8uWslUSxjqMiFZsflKR-20" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;match_id (PK)&lt;br/&gt;fixture&lt;br/&gt;tournament_category&lt;br/&gt;base_ticket_price&lt;br/&gt;match_status&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="x8uWslUSxjqMiFZsflKR-22" edge="1" parent="1" source="x8uWslUSxjqMiFZsflKR-18" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;curved=1;exitX=1.02;exitY=0.184;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.118;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="x8uWslUSxjqMiFZsflKR-24" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="1060.8" y="396.69" as="sourcePoint" />
+            <mxPoint x="1130" y="383.32" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x8uWslUSxjqMiFZsflKR-23" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Bookings " vertex="1">
+          <mxGeometry height="160" width="160" x="1114" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="x8uWslUSxjqMiFZsflKR-24" parent="x8uWslUSxjqMiFZsflKR-23" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="booking_id (PK)&lt;br/&gt;user_id (FK)&lt;br/&gt;match_id (FK)&lt;br/&gt;seat_number&lt;br/&gt;payment_status&lt;br/&gt;total_cost" vertex="1">
+          <mxGeometry height="110" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="x8uWslUSxjqMiFZsflKR-27" edge="1" parent="1" source="x8uWslUSxjqMiFZsflKR-20" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;curved=1;entryX=1.01;entryY=0.097;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" target="x8uWslUSxjqMiFZsflKR-24" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="1230" y="640" as="sourcePoint" />
+            <mxPoint x="1330" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
