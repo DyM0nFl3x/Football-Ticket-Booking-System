@@ -21,9 +21,6 @@ CREATE TABLE
     email VARCHAR(255) UNIQUE NOT NULL,
     role VARCHAR(14) NOT NULL CHECK (role IN ('Ticket Manager', 'Football Fan')),
     phone_number VARCHAR(20)
-    --(done) Write your constraint to make 'user_id' the Primary Key
-    --(done) Write your constraint to ensure 'email' values are never duplicated
-    --(done) Write your check constraint to restrict 'role' to specific allowed strings
   );
 
 -- =========================================================================
@@ -43,9 +40,6 @@ CREATE TABLE
         'Postponed'
       )
     )
-    --(done) Write your constraint to make 'match_id' the Primary Key
-    --(done) Write your check constraint to prevent negative ticket prices
-    --(done) Write your check constraint to restrict 'match_status' values
   );
 
 -- =========================================================================
@@ -61,11 +55,6 @@ CREATE TABLE
       payment_status IN ('Pending', 'Confirmed', 'Cancelled', 'Refunded')
     ),
     total_cost DECIMAL(10, 2) NOT NULL CHECK (total_cost >= 0)
-    --(done) Write your constraint to make 'booking_id' the Primary Key
-    --(done) Write your Foreign Key constraint linking 'user_id' to the Users table
-    --(done) Write your Foreign Key constraint linking 'match_id' to the Matches table
-    --(done) Write your check constraint to ensure 'total_cost' is non-negative
-    --(done) Write your check constraint to restrict 'payment_status' values
   );
 
 -- =========================================================================
