@@ -204,7 +204,7 @@ Google Drive Link: [☁ video](https://drive.google.com/file/d/1ckpynxxxYY9XCJP-
 
 - PostgreSQL
 - SQL
--Beekeeper Studio
+- Beekeeper Studio
 - Draw.io (ERD)
 
 ---
