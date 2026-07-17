@@ -135,11 +135,8 @@ Google Drive Link: [☁ video](https://drive.google.com/file/d/1ckpynxxxYY9XCJP-
 - ORDER BY
 - LIMIT
 - OFFSET
-- INNER JOIN
 - LEFT JOIN
 - Aggregate Functions
-- GROUP BY
-- HAVING
 - Subquery
 - COALESCE
 
